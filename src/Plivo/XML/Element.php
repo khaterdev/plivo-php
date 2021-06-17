@@ -118,8 +118,7 @@ class Element {
     function continueSpeak($body = null) {
         $element = new Cont($body);
         $position = count($this->childs)-1;
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -131,8 +130,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Break_($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -144,8 +142,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Emphasis($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return$this->childs[$position]->add($element);
     }
 
     /**
@@ -157,8 +154,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Lang($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -170,8 +166,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new P($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -183,8 +178,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Phoneme($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -196,8 +190,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Prosody($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -209,8 +202,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new S($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -223,8 +215,7 @@ class Element {
         $position = count($this->childs)-1;
         $element = new SayAs($body,$attributes);
         $element->setName('say-as');
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -236,8 +227,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new Sub($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
@@ -249,8 +239,7 @@ class Element {
         $this->checkIsSSMLSupported();
         $position = count($this->childs)-1;
         $element = new W($body,$attributes);
-        $this->childs[$position]->add($element);
-        return $this;
+	    return $this->childs[$position]->add($element);
     }
 
     /**
