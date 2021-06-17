@@ -117,8 +117,10 @@ class Element {
      */
     function continueSpeak($body = null) {
         $element = new Cont($body);
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
-	    return $this->childs[$position]->add($element);
+        $position = count($this->childs)-1;
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+        return $this->childs[$position];
     }
 
     /**
@@ -128,9 +130,11 @@ class Element {
      */
     function addBreak($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Break_($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -140,9 +144,11 @@ class Element {
      */
     function addEmphasis($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Emphasis($body,$attributes);
-	    return$this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -152,9 +158,11 @@ class Element {
      */
     function addLang($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Lang($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -164,9 +172,11 @@ class Element {
      */
     function addP($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new P($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -176,9 +186,11 @@ class Element {
      */
     function addPhoneme($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Phoneme($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -188,9 +200,11 @@ class Element {
      */
     function addProsody($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Prosody($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -200,9 +214,11 @@ class Element {
      */
     function addS($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new S($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -212,10 +228,12 @@ class Element {
      */
     function addSayAs($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new SayAs($body,$attributes);
         $element->setName('say-as');
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -225,9 +243,11 @@ class Element {
      */
     function addSub($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new Sub($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
@@ -237,9 +257,11 @@ class Element {
      */
     function addW($body = null, $attributes = []) {
         $this->checkIsSSMLSupported();
-        $position = (count($this->childs) -1) < 0 ? 0 : (count($this->childs) -1) ;
+        $position = count($this->childs)-1;
         $element = new W($body,$attributes);
-	    return $this->childs[$position]->add($element);
+        $this->childs[$position]->add($element);
+	    $position = count($this->childs)-1;
+	    return $this->childs[$position];
     }
 
     /**
