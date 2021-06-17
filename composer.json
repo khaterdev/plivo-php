@@ -1,5 +1,5 @@
 {
-    "name": "plivo/php-sdk",
+    "name": "plivo/plivo-php",
     "description": "A PHP SDK to make voice calls & send SMS using Plivo and to generate Plivo XML",
     "keywords": ["plivo", "plivo xml", "voice calls", "sms", "api"],
     "homepage": "http://github.com/plivo/plivo-php",
